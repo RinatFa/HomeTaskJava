@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class less01_1 {
+public class Less011 {
     public static void main(String[] args) {
         boolean flag = false; // флаг числового типа
         String sName = ""; // переменная ввода с клавиатуры
