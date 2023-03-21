@@ -17,31 +17,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("---------------------");
-        LivingBeing[] livingbeings = { new Cat("Кот Барсик"),
+        LivingBeing[] livingbeings = {new Cat("Кот Барсик"),
                 new Robot("Робот Макс"),
-                new Human("Легкоатлет") };
+                new Human("Легкоатлет")};
         for (LivingBeing item : livingbeings) {
             item.run();
             item.jump();
         }
         System.out.println("---------------------");
-        // LivingBeing[] livingbeings2 = { new Human("Студент"), new Cat("Кот Барсик"),
-        // new Robot("Робот Макс") };
-        Obstacle[] obstacles = { new Runningtrack(100), new Runningtrack(1000),
+        Obstacle[] obstacles = {new Runningtrack(100), new Runningtrack(1000),
                 new Runningtrack(10000), new Wall(0.3),
-                new Wall(0.6), new Wall(0.9) };
-
-        // Runningtrack runtrack1 = new Runningtrack(1000);
-        // System.out.println(runtrack1.getLength());
-        // Human h = new Human("h");
-        // System.out.println(h.name + " " + h.maxJumpRise + " " + h.maxRunDistance + "
-        // " + h.type);
-        // Wall wall1 = new Wall(0.5);
-        // System.out.println(wall1.getHeight());
-
+                new Wall(0.6), new Wall(0.9)};
         for (LivingBeing item : livingbeings) {
-            // item.runRunningtrack(runtrack1.getLength());
-            // item.jumpWall(wall1.getHeight());
             boolean successfully = true;
             for (Obstacle item2 : obstacles) {
                 if (item2 instanceof Runningtrack) {
@@ -52,7 +39,6 @@ public class Main {
                         break;
                     }
                 } else {
-                    // item.jumpWall(item2.getHeight());
                     if (item.jumpWall(item2.getHeight())) {
                     } else {
                         System.out.println("--- " + item.name + " завершил эстафету досрочно! ---");

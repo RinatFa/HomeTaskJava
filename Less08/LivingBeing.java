@@ -6,15 +6,11 @@ public abstract class LivingBeing { // Живое существо
     protected double maxJumpRise;
     protected String type;
 
-    // static int count;
-
     public LivingBeing(String name, int maxRunDistance, Double maxJumpRise, String type) {
-        // public LivingBeing(String name, String type) {
         this.name = name;
         this.maxRunDistance = maxRunDistance;
         this.maxJumpRise = maxJumpRise;
         this.type = type;
-        // count++;
     }
 
     public void run() {
