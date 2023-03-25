@@ -39,8 +39,6 @@ public class Application {
             System.out.println("ваш ход");
             String answer = in.next().toUpperCase();
             Answer answerGame = game.inputAnswer(answer);
-//            System.out.println(String.format("Найдено %d коров и %d быков", answerGame.getCows(), answerGame.getBulls()));
-
             iCount++;
             sSarr[iCount] = answer;
             sResult[iCount] = answerGame.getBulls().toString() + "Б" + answerGame.getCows().toString() + "К";
