@@ -26,7 +26,7 @@ public class Calc {
         return div;
     }
 
-    public Integer bin10to2(List<? extends Number> items) { // Перевод десятичного в двоичное
+    public Integer bin10to2(List<? extends Number> items) {
         int bin10to2 = 0;
         for (Iterator<Number> i = (Iterator<Number>) items.iterator(); i.hasNext(); ) {
             bin10to2 = i.next().intValue();
@@ -45,7 +45,7 @@ public class Calc {
         return bin10to2;
     }
 
-    public String bin2to10(List<? extends Number> items) { // Перевод двоичного в десятичное
+    public String bin2to10(List<? extends Number> items) {
         String bin2to10 = "";
         for (Iterator<Number> i = (Iterator<Number>) items.iterator(); i.hasNext(); ) {
             bin2to10 = i.next().toString();
