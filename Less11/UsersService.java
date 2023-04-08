@@ -1,15 +1,17 @@
 package org.example;
 
+import java.util.List;
+
 /**
  * Принцип разделения интерфейса ->
  * Interface Segregation Principle
  * Принцип инверсии зависимостей ->
  * Dependency Inversion Principle
  */
-public class StudyGroupService implements GroupService {
+public class UsersService implements ReadService {
 
     @Override
-    public StudyGroup create(StudyGroup studygroup) {
-        return studygroup;
+    public List<User> read(List<User> users) {
+        return users;
     }
 }

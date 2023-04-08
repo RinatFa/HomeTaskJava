@@ -2,6 +2,10 @@ package org.example;
 
 import java.util.List;
 
+/**
+ * Единственная ответственность ->
+ * Single Responsibility Principle
+ */
 public class StudyGroup {
     int groupID;
     Teacher teach;

@@ -6,8 +6,6 @@ package org.example;
  * Открыт для расширения, но закрыт для изменения ->
  * Open-Closed Principle
  */
-public interface DataService {
-    User create(Student student);
-
-    User create(Teacher teacher);
+public interface GroupService {
+    StudyGroup create(StudyGroup studygroup);
 }

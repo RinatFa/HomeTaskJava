@@ -1,7 +1,11 @@
 package org.example;
 
-import java.util.List;
-
+/**
+ * Принцип разделения интерфейса ->
+ * Interface Segregation Principle
+ * Принцип инверсии зависимостей ->
+ * Dependency Inversion Principle
+ */
 public class UserService implements DataService {
 
     @Override
@@ -12,10 +16,5 @@ public class UserService implements DataService {
     @Override
     public User create(Teacher teacher) {
         return teacher;
-    }
-
-    @Override
-    public List<User> read(List<User> users) {
-        return users;
     }
 }

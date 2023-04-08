@@ -2,6 +2,12 @@ package org.example;
 
 import java.util.List;
 
+/**
+ * Принцип подстановки Барбары Лисков ->
+ * Liskov Substitution Principle
+ * Единственная ответственность ->
+ * Single Responsibility Principle
+ */
 public class Student extends User {
     int groupID;
     List<Integer> grade;
